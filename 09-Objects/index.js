@@ -7,4 +7,18 @@ const duck =  {
     }
 };
 
-duck.quack();
+//duck.quack();
+
+duck.wings = 2;
+console.log(duck);
+delete duck.quack;
+console.log(duck);
+
+const square = {
+    sides: 4,
+    length: 5,
+    perimeter() {return this.sides * this.length},
+    area() {return this.length * this.length}
+}
+
+console.log(square.perimeter());
