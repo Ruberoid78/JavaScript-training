@@ -22,3 +22,12 @@ const square = {
 }
 
 console.log(square.perimeter());
+
+const dice = {
+    sides: 6,
+    roll() {
+        return Math.ceil(Math.random()*this.sides);
+    }
+}
+
+console.log(dice.roll());
